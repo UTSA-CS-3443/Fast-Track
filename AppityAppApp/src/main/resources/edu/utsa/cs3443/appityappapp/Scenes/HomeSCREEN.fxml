@@ -4,17 +4,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.appityappapp.AppController">
+<AnchorPane style="-fx-background-color: linear-gradient(to bottom, #8DBCE8, #EDF5FC);" maxHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.appityappapp.AppController">
    <children>
-      <ChoiceBox layoutX="334.0" layoutY="14.0" onContextMenuRequested="#DropME" prefHeight="45.0" prefWidth="81.0" />
-      <Label alignment="CENTER" layoutX="16.0" layoutY="13.0" prefHeight="45.0" prefWidth="318.0" text="FastTrack">
+      <ChoiceBox AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0" onContextMenuRequested="#DropME" prefHeight="45.0" prefWidth="81.0" />
+      <Label alignment="CENTER" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="113.0" layoutY="13.0" prefHeight="45.0"  text="FastTrack" style="-fx-text-fill: #14283F;">
          <font>
-            <Font size="20.0" />
+            <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <ListView layoutX="16.0" layoutY="105.0" prefHeight="258.0" prefWidth="398.0" />
-      <ListView layoutX="16.0" layoutY="416.0" prefHeight="149.0" prefWidth="398.0" />
-      <Label layoutX="16.0" layoutY="80.0" prefHeight="25.0" prefWidth="181.0" text="Vehicle's" />
-      <Label layoutX="16.0" layoutY="391.0" prefHeight="25.0" prefWidth="181.0" text="Reminders" />
+      <ListView layoutX="16.0" layoutY="105.0" prefHeight="258.0" prefWidth="398.0" style="-fx-border-color: #A6BDD3; -fx-border-width: 1; -fx-background-color: white;" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" />
+      <ListView layoutX="16.0" layoutY="416.0" prefHeight="149.0" prefWidth="398.0" style="-fx-border-color: #A6BDD3; -fx-border-width: 1; -fx-background-color: white;" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="416.0" AnchorPane.bottomAnchor="19.0"/>
+      <Label layoutX="16.0" layoutY="80.0" prefHeight="25.0" prefWidth="181.0" text="Vehicles" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #111111;" />
+      <Label layoutX="16.0" layoutY="391.0" prefHeight="25.0" prefWidth="181.0" text="Reminders" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #111111;" />
    </children>
 </AnchorPane>

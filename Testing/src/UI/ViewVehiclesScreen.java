@@ -13,7 +13,7 @@ public class ViewVehiclesScreen extends Screen {
         //allVehiclesMenu(a);
     }
 
-    public static void allVehiclesMenuu(Manager a){
+    public static void allVehiclesMenu(Manager a){
         Scanner scnr = new Scanner(System.in);
 
         System.out.println("(1) View a vehicle's information");

@@ -13,6 +13,7 @@ public class Vehicle {
         this.make = make;
         this.model = model;
         this.color = color;
+        this.mileage = mileage;
         this.MPG = MPG;
         this.avgMPG = avgMPG;
         this.ID = ID;
@@ -42,7 +43,7 @@ public class Vehicle {
     public String getMileage(){
         return mileage;
     }
-    public void setMileage(){
+    public void setMileage(String mileage){
         this.mileage = mileage;
     }
 

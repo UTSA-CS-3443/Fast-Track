@@ -349,7 +349,6 @@ public class Manager {
                 b.setReminderID(InputValidator.readIntNumber("Try again"));
                 saveRemindersToFile();
             }
-            i += 1;
         }
     }
 

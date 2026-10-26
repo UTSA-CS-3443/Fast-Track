@@ -46,6 +46,7 @@ public class VehicleInfoScreen extends Screen{
                 case 3:
                     break;
                 case 4:
+                    looping = false;
                     break;
             }
         }

@@ -12,7 +12,7 @@ public class RunFastTrack extends Application  {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(RunFastTrack.class.getResource("Scenes/HomeSCREEN.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("IDK");
+        stage.setTitle("FastTrack");
         stage.setScene(scene);
         stage.show();
     }
