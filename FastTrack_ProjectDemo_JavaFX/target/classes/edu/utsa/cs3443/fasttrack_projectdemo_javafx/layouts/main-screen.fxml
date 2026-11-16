@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.MainScreenController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="163.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/blucar.jpg" />
+               </image></ImageView>
+            <Label fx:id="FastTrackLabel" text="FastTrack">
+               <opaqueInsets>
+                  <Insets left="50.0" right="50.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="145.0" prefWidth="600.0">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="92.0" prefWidth="152.0" text="Car maintenance made easy." />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="185.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/car.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin></ImageView>
+            <ImageView fitHeight="107.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rench.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin></ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="112.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="43.0" prefWidth="166.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#VehiclesButtonClick" prefHeight="26.0" prefWidth="81.0" text="Vehicles" textAlignment="CENTER" />
+               </children>
+               <opaqueInsets>
+                  <Insets left="50.0" right="100.0" />
+               </opaqueInsets>
+            </VBox>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="10.0" mnemonicParsing="false" onAction="#RemindersButtonClick" prefHeight="26.0" prefWidth="81.0" text="Reminders" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="errorMessageLabel" prefHeight="47.0" prefWidth="526.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="195.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#exitButtonClick" text="Exit" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="179.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="102.0" prefWidth="352.0" text="(NOTE: This is a one-user application! No login function necessary)" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -32,4 +32,11 @@ public class Part {
     public void setReminderID(int ID){
         this.reminderID = ID;
     }
+
+    // this is used because an arrayList of Part objects is passed to ReminderDetails
+    // and it converts its list of parts into strings to display them in the ListView
+    @Override
+    public String toString(){
+        return partName;
+    }
 }

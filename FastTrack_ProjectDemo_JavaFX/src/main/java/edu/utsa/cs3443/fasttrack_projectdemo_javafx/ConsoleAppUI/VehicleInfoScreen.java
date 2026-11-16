@@ -16,7 +16,7 @@ public class VehicleInfoScreen extends Screen{
      * @param a
      */
     public static void showVehicleInfo(int vehicleID, Manager a){
-        Vehicle currVehicle = a.findVehicleByID(vehicleID);
+        Vehicle currVehicle = a.getVehicleByID(vehicleID);
 
         displayHeader("Viewing Vehicle Info + Reminders:");
         a.printVehicleCard(vehicleID);

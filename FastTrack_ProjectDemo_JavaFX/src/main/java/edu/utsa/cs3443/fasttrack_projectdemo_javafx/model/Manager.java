@@ -28,11 +28,13 @@ public class Manager extends Screen {
 
         }
     }
-
     /**
      * loads vehicles from csv file
      * @throws IOException
      */
+    public ArrayList<Vehicle> getVehiclesList(){
+        return VehiclesList;
+    }
     public void loadVehicles() throws IOException {
         try{
             BufferedReader br = new BufferedReader(new FileReader("data/vehicles.csv"));
@@ -47,7 +49,6 @@ public class Manager extends Screen {
             System.out.println("Error occured loading vehicles from file: " + e.getMessage());
         }
     }
-
     /**
      * loads reminders from csv file.
      */
@@ -66,7 +67,6 @@ public class Manager extends Screen {
             System.out.println("Error loading reminders: " + e.getMessage());
         }
     }
-
     /**
      * loads parts from csv file.
      */
@@ -116,7 +116,7 @@ public class Manager extends Screen {
      * @param inputVehicleID integer ID that is checked against the IDs of objects in the VehiclesList arraylist
      * @return the found vehicle
      */
-    public Vehicle findVehicleByID(int inputVehicleID){
+    public Vehicle getVehicleByID(int inputVehicleID){
         for (Vehicle a : VehiclesList){
             if (inputVehicleID == a.getID()){
                 return a;
@@ -124,6 +124,52 @@ public class Manager extends Screen {
         }
         System.out.println("*** ERROR: unable to find vehicle via ID ***");
         return null;
+    }
+
+    /**
+     * same function as the above method, but for reminders
+     * @param inputReminderID
+     * @return
+     */
+    public Reminder getReminderByID(int inputReminderID){
+        for (Reminder a : RemindersList){
+            if (inputReminderID == a.getReminderID()){
+                return a;
+            }
+        }
+        return null;
+    }
+    public Part getPartByID(int inputPartID){
+        for (Part a : PartsList){
+            if (inputPartID == a.getPartID()){
+                return a;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * finds all reminders associated with a vehicle for the VehicleDetails controller
+      * @param vehicleID the vehicle
+     * @return ArrayList of all associated reminders to be used in ListView
+     */
+    public ArrayList<Reminder> getVehicleRemindersList (int vehicleID){
+        ArrayList<Reminder> list = new ArrayList<>();
+        for (Reminder a : RemindersList){
+            if (a.getVehicleID() == vehicleID){
+                list.add(a);
+            }
+        }
+        return list;
+    }
+    public ArrayList<Part> getReminderPartsList (int reminderID){
+        ArrayList<Part> list = new ArrayList<>();
+        for (Part a : PartsList){
+            if (a.getReminderID() == reminderID){
+                list.add(a);
+            }
+        }
+        return list;
     }
     /**
      * prints out each vehicle's ID, Make and edu.utsa.cs3443.fasttrack_projectdemo_javafx.model
@@ -140,7 +186,7 @@ public class Manager extends Screen {
      * @param vehicleID the integer that the user inputs from the menu interface, which is used to select the corresponding vehicle from the vehiclesList arraylist
      */
     public void printVehicleCard(int vehicleID){
-        Vehicle currVehicle = findVehicleByID(vehicleID);
+        Vehicle currVehicle = getVehicleByID(vehicleID);
 
         System.out.printf("%-15s %s\n", "Make:", currVehicle.getMake());
         System.out.printf("%-15s %s\n", "Model:", currVehicle.getModel());
@@ -156,7 +202,7 @@ public class Manager extends Screen {
      * @param vehicleID
      */
     public void printVehicleReminders(int vehicleID){
-        Vehicle currVehicle = findVehicleByID(vehicleID);
+        Vehicle currVehicle = getVehicleByID(vehicleID);
         for (Reminder a : RemindersList){
             if (a.getVehicleID() == currVehicle.getID()){
                 System.out.println("- ("+ a.getReminderID() + ") " + a.getReminderName());
@@ -207,7 +253,7 @@ public class Manager extends Screen {
      */
     public void editVehicle(String make, String model, String color, String mileage, String MPG, String avgMPG, int ID){
         Vehicle editedVehicle = new Vehicle("", "", "", "",0.0, 0.0, ID);
-        //findVehicleByID is returning the vehicle object that is already in the array.
+        //getVehicleByID is returning the vehicle object that is already in the array.
         int index = 0;
         for (int i = 0; i < VehiclesList.size(); i++){
             if (VehiclesList.get(i).getID() == ID){
@@ -565,10 +611,6 @@ public class Manager extends Screen {
         }
         writer.close();
     }
-
-
-
-
     /**
      * repeatedly asks user for ID when creating/editing vehicle, loops until an unused ID is found
      * @return returns the validated ID

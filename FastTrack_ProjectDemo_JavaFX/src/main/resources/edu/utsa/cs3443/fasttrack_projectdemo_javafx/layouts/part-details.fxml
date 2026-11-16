@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.PartDetailsController">
+    <children>
+      <Button layoutX="17.0" layoutY="436.0" mnemonicParsing="false" onAction="#backClick" prefHeight="36.0" prefWidth="80.0" text="Back" textFill="RED" />
+        <ChoiceBox layoutX="712.0" layoutY="27.0" prefHeight="46.0" prefWidth="48.0" />
+      <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/blucar.jpg" />
+         </image></ImageView>
+        <Label fx:id="FastTrackLabel" alignment="CENTER" layoutX="36.0" layoutY="27.0" prefHeight="45.0" prefWidth="318.0" text="FastTrack">
+            <font>
+                <Font name="Britannic Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="246.0" layoutY="38.0" prefHeight="28.0" prefWidth="254.0" text="Part Details" textFill="#898989">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="134.0" text="Part Name:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="207.0" text="Part ID:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="452.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/rench.png" />
+         </image></ImageView>
+      <Label layoutX="20.0" layoutY="170.0" text="Associated Reminder ID:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="partName" layoutX="246.0" layoutY="134.0" text="partName" textFill="#3c3eb9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="partReminderID" layoutX="246.0" layoutY="170.0" text="partReminderID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="partID" layoutX="246.0" layoutY="207.0" text="partID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="partErrorLabel" layoutX="639.0" layoutY="445.0" />
+      <Button layoutX="109.0" layoutY="436.0" mnemonicParsing="false" onAction="#editPartClick" prefHeight="36.0" prefWidth="186.0" text="Edit Part Information" />
+    </children>
+</AnchorPane>

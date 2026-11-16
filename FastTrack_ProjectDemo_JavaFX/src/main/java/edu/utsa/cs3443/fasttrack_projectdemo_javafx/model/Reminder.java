@@ -56,4 +56,11 @@ public class Reminder {
     public void setLocation (String location){
         this.location = location;
     }
+
+    // this is used because an arrayList of Reminder objects is passed to VehicleDetails,
+    // and it converts its list of reminders into strings to display them in the ListView
+    @Override
+    public String toString(){
+        return reminderName;
+    }
 }

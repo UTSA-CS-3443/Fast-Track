@@ -1,14 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.ReminderListController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="83.0" prefWidth="790.0">
+                    <children>
+                        <Label fx:id="FastTrackLabel" prefHeight="60.0" prefWidth="253.0" text="FastTrack">
+                            <font>
+                                <Font name="Britannic Bold" size="36.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/blucar.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="230.0" text="View All Vehicles" textFill="#898989">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="24.0" />
+                            </font></Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                    <opaqueInsets>
+                        <Insets left="100.0" />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets left="50.0" right="50.0" />
+            </opaqueInsets>
+        </VBox>
+        <Label fx:id="currUserLabel" />
+        <HBox prefHeight="610.0" prefWidth="625.0">
+            <children>
+                <VBox prefHeight="394.0" prefWidth="172.0">
+                    <children>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="152.0">
+                            <children>
+                                <Label text="VehicleID" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="4.0" prefWidth="711.0">
+                            <children>
+                                <TextArea fx:id="inputArea" prefHeight="21.0" prefWidth="124.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="18.0" prefWidth="152.0">
+                            <children>
+                                <RadioButton fx:id="findRadioButton" mnemonicParsing="false" text="Find" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="152.0" spacing="10.0">
+                            <children>
+                                <RadioButton fx:id="deleteRadioButton" mnemonicParsing="false" text="Delete" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="31.0" prefWidth="902.0">
+                            <children>
+                                <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonClick" text="Go!" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" top="13.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="103.0" prefWidth="141.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#backClick" text="Back" textFill="#fa0404">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="394.0" prefWidth="558.0">
+                    <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="341.0" prefWidth="558.0">
+                            <children>
+                                <TextArea fx:id="outputArea" prefHeight="323.0" prefWidth="555.0">
+                                    <font>
+                                        <Font name="Courier New" size="11.0" />
+                                    </font>
+                                </TextArea>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <VBox prefHeight="44.0" prefWidth="790.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="55.0" prefWidth="790.0">
+                    <children>
+                        <Label contentDisplay="CENTER" text="©2026 - Property of CS 3443. Unauthorized cloning of ships (or code) is strictly prohibited by captain!" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>

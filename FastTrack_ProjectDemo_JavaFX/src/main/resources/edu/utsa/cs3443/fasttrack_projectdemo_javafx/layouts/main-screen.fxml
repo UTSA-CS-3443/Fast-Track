@@ -14,7 +14,7 @@
                <image>
                   <Image url="@../images/blucar.jpg" />
                </image></ImageView>
-            <Label text="FastTrack">
+            <Label fx:id="FastTrackLabel" text="FastTrack">
                <opaqueInsets>
                   <Insets left="50.0" right="50.0" />
                </opaqueInsets>
@@ -57,13 +57,13 @@
          <children>
             <VBox prefHeight="43.0" prefWidth="166.0">
                <children>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="Vehicles" textAlignment="CENTER" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#VehiclesButtonClick" prefHeight="26.0" prefWidth="81.0" text="Vehicles" textAlignment="CENTER" />
                </children>
                <opaqueInsets>
                   <Insets left="50.0" right="100.0" />
                </opaqueInsets>
             </VBox>
-            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="Reminders" textAlignment="CENTER" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="10.0" mnemonicParsing="false" onAction="#RemindersButtonClick" prefHeight="26.0" prefWidth="81.0" text="Reminders" textAlignment="CENTER" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0">
@@ -73,7 +73,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="195.0" prefWidth="600.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#loginButtonClick" text="Exit" />
+            <Button mnemonicParsing="false" onAction="#exitButtonClick" text="Exit" />
          </children>
       </HBox>
       <HBox alignment="BOTTOM_CENTER" prefHeight="179.0" prefWidth="600.0">
