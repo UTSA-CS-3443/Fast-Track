@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: #FFF0DF;" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.appityappapp.AppController">
+    <children>
+        <ChoiceBox layoutX="334.0" layoutY="14.0" prefHeight="45.0" prefWidth="81.0" />
+        <Label alignment="CENTER" layoutX="16.0" layoutY="13.0" prefHeight="45.0" prefWidth="318.0" text="FastTrack">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="16.0" layoutY="59.0" prefHeight="25.0" prefWidth="318.0" text="Add Vehicle" style="-fx-font-weight: bold;" />
+
+        <Label layoutX="16.0" layoutY="96.0" text="Make:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="makeField" layoutX="175.0" layoutY="96.0" prefWidth="236.0" />
+
+        <Label layoutX="16.0" layoutY="131.0" text="Model:" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="modelField" layoutX="175.0" layoutY="131.0" prefWidth="236.0" />
+
+        <Label layoutX="16.0" layoutY="166.0" text="Color:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="colorField" layoutX="175.0" layoutY="166.0" prefWidth="236.0" />
+
+        <Label layoutX="16.0" layoutY="201.0" text="Mileage:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="mileageField" layoutX="175.0" layoutY="201.0" prefWidth="236.0" />
+
+        <Label layoutX="16.0" layoutY="236.0" text="Current MPG:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="mpgField" layoutX="175.0" layoutY="236.0" prefWidth="236.0" />
+
+        <Label layoutX="16.0" layoutY="271.0" text="Average MPG:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="averageMpgField" layoutX="175.0" layoutY="271.0" prefWidth="236.0" />
+
+        <Label layoutX="16.0" layoutY="306.0" text="Vehicle ID:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="vehicleIdField" layoutX="175.0" layoutY="306.0" prefWidth="236.0" editable="false" />
+
+        <Label layoutX="16.0" layoutY="341.0" text="Extra Notes:" style="-fx-font-weight: bold;" />
+        <TextArea fx:id="notesArea" layoutX="16.0" layoutY="370.0" prefWidth="395.0" prefHeight="145.0" wrapText="true" />
+
+        <Button fx:id="returnButton" layoutX="16.0" layoutY="536.0" text="Return" style="-fx-background-color: #DCEBFA; -fx-text-fill: #193C62;"/>
+        <Button fx:id="saveButton" layoutX="311.0" layoutY="536.0" prefWidth="100.0" text="Add Vehicle" style="-fx-background-color: #2C5B8D; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+    </children>
+</AnchorPane>

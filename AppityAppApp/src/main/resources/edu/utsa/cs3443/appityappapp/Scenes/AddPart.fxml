@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: #FFF0DF;" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.appityappapp.AppController">
+    <children>
+        <ChoiceBox layoutX="334.0" layoutY="14.0" prefHeight="45.0" prefWidth="81.0" />
+        <Label alignment="CENTER" layoutX="16.0" layoutY="13.0" prefHeight="45.0" prefWidth="318.0" text="FastTrack">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="16.0" layoutY="59.0" prefHeight="25.0" prefWidth="318.0" text="Add Part" style="-fx-font-weight: bold;" />
+        <Label layoutX="16.0" layoutY="96.0" text="Part Name:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="partNameField" layoutX="175.0" layoutY="96.0" prefWidth="236.0" />
+        <Label layoutX="16.0" layoutY="131.0" text="Reminder ID:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="reminderIdField" layoutX="175.0" layoutY="131.0" prefWidth="236.0" editable="false"/>
+        <Button fx:id="returnButton" layoutX="16.0" layoutY="181.0" text="Return" style="-fx-background-color: #DCEBFA; -fx-text-fill: #193c62;"/>
+        <Button fx:id="saveButton" layoutX="311.0" layoutY="181.0" prefWidth="100.0" text="Add Part" style="-fx-background-color: #2C5B8D; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+    </children>
+</AnchorPane>
