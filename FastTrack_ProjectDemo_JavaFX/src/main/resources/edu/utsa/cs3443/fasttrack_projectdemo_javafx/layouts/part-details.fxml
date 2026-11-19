@@ -8,7 +8,6 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.PartDetailsController">
     <children>
       <Button layoutX="17.0" layoutY="436.0" mnemonicParsing="false" onAction="#backClick" prefHeight="36.0" prefWidth="80.0" text="Back" textFill="RED" />
-        <ChoiceBox layoutX="712.0" layoutY="27.0" prefHeight="46.0" prefWidth="48.0" />
       <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/blucar.jpg" />
@@ -54,6 +53,7 @@
          </font>
       </Label>
       <Label fx:id="partErrorLabel" layoutX="639.0" layoutY="445.0" />
-      <Button layoutX="109.0" layoutY="436.0" mnemonicParsing="false" onAction="#editPartClick" prefHeight="36.0" prefWidth="186.0" text="Edit Part Information" />
+      <Button fx:id="editPartClick" layoutX="109.0" layoutY="436.0" mnemonicParsing="false" onAction="#editPartClick" prefHeight="36.0" prefWidth="186.0" text="Edit Part Information" />
+      <Button layoutX="18.0" layoutY="17.0" mnemonicParsing="false" onAction="#homeClick" opacity="0.0" prefHeight="70.0" prefWidth="261.0" text="Button" />
     </children>
 </AnchorPane>

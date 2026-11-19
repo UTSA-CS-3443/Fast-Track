@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.EditReminderController">
+    <children>
+        <Button layoutX="20.0" layoutY="436.0" mnemonicParsing="false" onAction="#backClick" prefHeight="36.0" prefWidth="80.0" text="Back" textFill="RED" />
+        <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/blucar.jpg" />
+            </image></ImageView>
+        <Label fx:id="FastTrackLabel" alignment="CENTER" layoutX="36.0" layoutY="27.0" prefHeight="45.0" prefWidth="318.0" text="FastTrack">
+            <font>
+                <Font name="Britannic Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="246.0" layoutY="38.0" prefHeight="25.0" prefWidth="318.0" text="Edit Reminder" textFill="#898989">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="24.0" />
+            </font></Label>
+        <Label layoutX="129.0" layoutY="122.0" text="Reminder:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="138.0" layoutY="222.0" text="Location:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="497.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/clock.jpg" />
+            </image></ImageView>
+        <Label layoutX="131.0" layoutY="174.0" text="Due Date:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+      <TextField fx:id="LocationInsert" layoutX="226.0" layoutY="223.0" prefHeight="25.0" prefWidth="368.0" />
+      <TextField fx:id="DueDateInsert" layoutX="226.0" layoutY="175.0" prefHeight="25.0" prefWidth="368.0" />
+      <TextField fx:id="ReminderNameInsert" layoutX="226.0" layoutY="123.0" prefHeight="25.0" prefWidth="368.0" />
+      <Button fx:id="SubmitButton" layoutX="504.0" layoutY="259.0" mnemonicParsing="false" onAction="#submitReminderEdit" prefHeight="36.0" prefWidth="81.0" text="Submit" />
+      <Label fx:id="submitLabel" layoutX="260.0" layoutY="259.0" prefHeight="36.0" prefWidth="243.0" text="Edit the informormation you wish to modify, then click submit" textAlignment="CENTER" textFill="#0453ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="234.0" layoutY="311.0" prefHeight="18.0" prefWidth="296.0" text="(leave fields unchanged if you do not wish to edit them)" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeClick" opacity="0.0" prefHeight="76.0" prefWidth="270.0" text="Button" />
+      <Button layoutX="19.0" layoutY="18.0" mnemonicParsing="false" onAction="#homeClick" opacity="0.0" prefHeight="66.0" prefWidth="258.0" text="Button" />
+    </children>
+</AnchorPane>

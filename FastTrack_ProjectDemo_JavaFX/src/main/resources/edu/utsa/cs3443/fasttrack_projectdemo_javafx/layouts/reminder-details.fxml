@@ -8,7 +8,6 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.ReminderDetailsController">
     <children>
       <Button layoutX="17.0" layoutY="436.0" mnemonicParsing="false" onAction="#backClick" prefHeight="36.0" prefWidth="80.0" text="Back" textFill="RED" />
-        <ChoiceBox layoutX="712.0" layoutY="27.0" prefHeight="46.0" prefWidth="48.0" />
       <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/blucar.jpg" />
@@ -80,8 +79,9 @@
       </Label>
       <Button layoutX="426.0" layoutY="436.0" mnemonicParsing="false" onAction="#viewPartClick" prefHeight="36.0" prefWidth="110.0" text="View Part Details" />
       <Label fx:id="partErrorLabel" layoutX="639.0" layoutY="445.0" />
-      <Button layoutX="109.0" layoutY="436.0" mnemonicParsing="false" onAction="#editReminderClick" prefHeight="36.0" prefWidth="186.0" text="Edit Reminder Information" />
+      <Button fx:id="editReminderClick" layoutX="109.0" layoutY="436.0" mnemonicParsing="false" onAction="#editReminderClick" prefHeight="36.0" prefWidth="186.0" text="Edit Reminder Information" />
       <Button layoutX="546.0" layoutY="436.0" mnemonicParsing="false" onAction="#addPartClick" prefHeight="36.0" prefWidth="80.0" text="Add Part" />
       <Label fx:id="partErrorLabel" layoutX="639.0" layoutY="445.0" prefHeight="18.0" prefWidth="140.0" textFill="#0011ff" />
+      <Button layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeClick" opacity="0.0" prefHeight="76.0" prefWidth="259.0" text="Button" />
     </children>
 </AnchorPane>

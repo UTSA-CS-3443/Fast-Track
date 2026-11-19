@@ -34,10 +34,14 @@ public class PartDetailsController {
     }
 
     public void editPartClick(){
+        changeScreen("layouts/edit-part.fxml");
 
     }
     public void backClick(){
         changeScreen("layouts/reminder-details.fxml");
+    }
+    public void homeClick(){
+        changeScreen("layouts/main-screen.fxml");
     }
     public void changeScreen(String fxmlPath){
         try {

@@ -46,7 +46,7 @@ public class VehicleDetailsController {
         vehicleMake.setText(b.getMake());
         vehicleModel.setText(b.getModel());
         vehicleColor.setText(b.getColor());
-        vehicleMileage.setText(b.getMileage());
+        vehicleMileage.setText(String.valueOf(b.getMileage()));
         vehicleMPG.setText(String.valueOf(b.getMPG()));
         vehicleAMPG.setText(String.valueOf(b.getAvgMPG()));
         IDlabel.setText(String.valueOf(b.getID()));
@@ -68,10 +68,14 @@ public class VehicleDetailsController {
     }
 
     public void editVehicleClick(){
+        changeScreen("layouts/edit-vehicle.fxml");
     }
 
     public void backClick(){
         changeScreen("layouts/vehicles-list.fxml");
+    }
+    public void homeClick(){
+        changeScreen("layouts/main-screen.fxml");
     }
 
     public void changeScreen(String fxmlPath) {

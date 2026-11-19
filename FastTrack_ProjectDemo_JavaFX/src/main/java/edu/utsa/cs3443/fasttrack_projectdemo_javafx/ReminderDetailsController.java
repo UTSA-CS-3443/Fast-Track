@@ -58,11 +58,17 @@ public class ReminderDetailsController {
     public void backClick(){
         changeScreen("layouts/vehicle-details.fxml");
     }
+    public void homeClick(){
+        changeScreen("layouts/main-screen.fxml");
+    }
 
     public void editReminderClick(){
+        changeScreen("layouts/edit-reminder.fxml");
     }
 
     public void addPartClick() {
+        changeScreen("layouts/add-part.fxml");
+
     }
 
     public void viewPartClick(){

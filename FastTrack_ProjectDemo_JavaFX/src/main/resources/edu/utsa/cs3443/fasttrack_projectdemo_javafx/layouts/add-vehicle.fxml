@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.AddVehicleController">
+    <children>
+        <Button layoutX="20.0" layoutY="436.0" mnemonicParsing="false" onAction="#backClick" prefHeight="36.0" prefWidth="80.0" text="Back" textFill="RED" />
+        <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/blucar.jpg" />
+            </image></ImageView>
+        <Label fx:id="FastTrackLabel" alignment="CENTER" layoutX="36.0" layoutY="27.0" prefHeight="45.0" prefWidth="318.0" text="FastTrack">
+            <font>
+                <Font name="Britannic Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="246.0" layoutY="38.0" prefHeight="25.0" prefWidth="318.0" text="Add New Vehicle" textFill="#898989">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="24.0" />
+            </font></Label>
+        <Label layoutX="167.0" layoutY="122.0" text="Make:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="167.0" layoutY="195.0" text="Color:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="512.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/car.jpg" />
+            </image></ImageView>
+        <Label layoutX="159.0" layoutY="160.0" text="Model:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="145.0" layoutY="230.0" text="Mileage:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <TextField fx:id="insertMileage" layoutX="226.0" layoutY="231.0" prefHeight="25.0" prefWidth="368.0" />
+      <TextField fx:id="insertColor" layoutX="226.0" layoutY="196.0" prefHeight="25.0" prefWidth="368.0" />
+      <TextField fx:id="insertModel" layoutX="226.0" layoutY="161.0" prefHeight="25.0" prefWidth="368.0" />
+      <TextField fx:id="insertMake" layoutX="226.0" layoutY="123.0" prefHeight="25.0" prefWidth="368.0" />
+      <Button layoutX="512.0" layoutY="346.0" mnemonicParsing="false" onAction="#createClick" prefHeight="36.0" prefWidth="81.0" text="Create" />
+      <Label fx:id="submitLabel" layoutX="226.0" layoutY="346.0" prefHeight="36.0" prefWidth="243.0" text="Enter attributes, then click 'Create' to save to file" textFill="#0453ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="insertMPG" layoutX="226.0" layoutY="269.0" prefHeight="25.0" prefWidth="368.0" />
+      <Label layoutX="169.0" layoutY="268.0" text="MPG:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="insertAvgMPG" layoutX="100.0" layoutY="310.0" text="Average MPG:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertAMPG" layoutX="226.0" layoutY="311.0" prefHeight="25.0" prefWidth="368.0" />
+      <Label fx:id="SubmitTextChanger1" layoutX="226.0" layoutY="418.0" prefHeight="36.0" prefWidth="318.0" text="(ID numbers are randomly generated)" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="homeButton" layoutX="13.0" layoutY="19.0" mnemonicParsing="false" onAction="#homeClick" opacity="0.0" prefHeight="66.0" prefWidth="264.0" text="Button" />
+    </children>
+</AnchorPane>

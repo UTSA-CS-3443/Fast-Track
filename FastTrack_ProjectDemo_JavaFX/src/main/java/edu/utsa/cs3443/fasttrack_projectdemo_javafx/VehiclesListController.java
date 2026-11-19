@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -47,7 +48,6 @@ public class VehiclesListController {
         IDColumn.setCellValueFactory(new PropertyValueFactory<>("ID"));
 
     }
-    @FXML
     public void viewButtonClick(){
         Vehicle selectedVehicle = vehicleTable.getSelectionModel().getSelectedItem();
         if (selectedVehicle == null) {
@@ -76,6 +76,10 @@ public class VehiclesListController {
             e.printStackTrace();
         }
     }
+    public void homeClick(){
+        changeScreen("layouts/main-screen.fxml");
+    }
+
     public void changeScreen(String fxmlPath) {
         try {
             //this is grabbing the stage dynamically so that you don't have to avoid passing the stage into this controller.

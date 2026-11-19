@@ -4,12 +4,12 @@ public class Vehicle {
     private String make;
     private String model;
     private String color;
-    private String mileage;
+    private int mileage;
     private double MPG;
     private double avgMPG;
     private int ID;
 
-    public Vehicle (String make, String model, String color, String mileage, double MPG, double avgMPG, int ID){
+    public Vehicle (String make, String model, String color, int mileage, double MPG, double avgMPG, int ID){
         this.make = make;
         this.model = model;
         this.color = color;
@@ -40,10 +40,10 @@ public class Vehicle {
         this.color = color;
     }
 
-    public String getMileage(){
+    public int getMileage(){
         return mileage;
     }
-    public void setMileage(String mileage){
+    public void setMileage(int mileage){
         this.mileage = mileage;
     }
 

@@ -8,7 +8,6 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utsa.cs3443.fasttrack_projectdemo_javafx.VehicleDetailsController">
     <children>
       <Button layoutX="17.0" layoutY="436.0" mnemonicParsing="false" onAction="#backClick" prefHeight="36.0" prefWidth="80.0" text="Back" textFill="RED" />
-        <ChoiceBox layoutX="712.0" layoutY="27.0" prefHeight="46.0" prefWidth="48.0" />
       <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/blucar.jpg" />
@@ -93,7 +92,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="426.0" layoutY="436.0" mnemonicParsing="false" onAction="#viewReminderClick" prefHeight="36.0" prefWidth="176.0" text="View Reminder Information" />
+      <Button layoutX="426.0" layoutY="436.0" mnemonicParsing="false" onAction="#viewReminderClick" prefHeight="36.0" prefWidth="166.0" text="View Reminder Information" />
       <Label fx:id="reminderErrorLabel" layoutX="617.0" layoutY="445.0" textFill="#2200ff" />
       <Button layoutX="109.0" layoutY="436.0" mnemonicParsing="false" onAction="#editVehicleClick" prefHeight="36.0" prefWidth="145.0" text="Edit Vehicle Information" />
       <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="497.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
@@ -101,5 +100,7 @@
             <Image url="@../images/car.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="newReminderButton" layoutX="605.0" layoutY="436.0" mnemonicParsing="false" onAction="#viewReminderClick" prefHeight="36.0" prefWidth="137.0" text="Create New Reminder" />
+      <Button layoutX="20.0" layoutY="17.0" mnemonicParsing="false" onAction="#homeClick" opacity="0.0" prefHeight="70.0" prefWidth="266.0" text="Button" />
     </children>
 </AnchorPane>
