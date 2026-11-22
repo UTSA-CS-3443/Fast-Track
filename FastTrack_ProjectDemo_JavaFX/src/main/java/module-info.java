@@ -4,5 +4,7 @@ module edu.utsa.cs3443.fasttrack_projectdemo_javafx {
 
 
     opens edu.utsa.cs3443.fasttrack_projectdemo_javafx to javafx.fxml;
+    opens edu.utsa.cs3443.fasttrack_projectdemo_javafx.model to javafx.base;
+
     exports edu.utsa.cs3443.fasttrack_projectdemo_javafx;
 }

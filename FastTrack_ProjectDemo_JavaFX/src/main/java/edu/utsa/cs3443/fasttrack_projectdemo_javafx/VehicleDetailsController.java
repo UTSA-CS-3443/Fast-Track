@@ -41,7 +41,7 @@ public class VehicleDetailsController {
 
     @FXML
     private void initialize(){
-        Manager a = new Manager();
+        Manager a = Manager.getInstance();
         Vehicle b = a.getVehicleByID(currVehicleID);
         vehicleMake.setText(b.getMake());
         vehicleModel.setText(b.getModel());

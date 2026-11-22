@@ -1,12 +1,12 @@
 package edu.utsa.cs3443.fasttrack_projectdemo_javafx;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
 
 import java.io.IOException;
 
@@ -30,7 +30,7 @@ public class MainScreenController {
     }
 
     public void exitButtonClick() {
-
+        Platform.exit();
     }
 
     public void changeScreen(String fxmlPath) {

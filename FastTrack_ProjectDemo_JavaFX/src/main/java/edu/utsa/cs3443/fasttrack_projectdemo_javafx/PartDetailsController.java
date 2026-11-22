@@ -26,7 +26,7 @@ public class PartDetailsController {
     private Label partID;
     @FXML
     private void initialize(){
-        Manager a = new Manager();
+        Manager a = Manager.getInstance();
         Part p = a.getPartByID(currPartID);
         partName.setText(p.getPartName());
         partReminderID.setText(String.valueOf(p.getReminderID()));

@@ -37,7 +37,7 @@ public class VehiclesListController {
     @FXML
     private void initialize(){
         // remember that every time a new manager object is created, it loads all the info
-        Manager a = new Manager();
+        Manager a = Manager.getInstance();
         ObservableList<Vehicle> observableList = FXCollections.observableArrayList(a.getVehiclesList());
 
         vehicleTable.setItems(observableList);

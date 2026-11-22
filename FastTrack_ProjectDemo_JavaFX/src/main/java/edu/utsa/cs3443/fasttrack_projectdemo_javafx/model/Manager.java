@@ -15,6 +15,7 @@ import java.util.Scanner;
  * the primary manager for vehicle, reminder, and part objects. Handles all of the operations involving reading and saving them to files.
  */
 public class Manager extends Screen {
+    private static Manager instance;
     ArrayList<Vehicle> VehiclesList = new ArrayList<>();
     ArrayList<Reminder> RemindersList = new ArrayList<>();
     ArrayList<Part> PartsList = new ArrayList<>();
@@ -27,6 +28,13 @@ public class Manager extends Screen {
         }catch(IOException e){
 
         }
+    }
+
+    public static Manager getInstance() {
+        if (instance == null) {
+            instance = new Manager();
+        }
+        return instance;
     }
     /**
      * loads vehicles from csv file
@@ -416,6 +424,22 @@ public class Manager extends Screen {
             }
             Files.move(tempFile.toPath(), inputFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
             System.out.println("The Reminder has been DELETED.");
+    }
+
+    /**
+     * Deletes all reminders associated with a given vehicleID and saves the updated list to file.
+     * @param vehicleID the ID of the vehicle whose reminders should be removed
+     * @return the number of reminders deleted
+     */
+    public int deleteRemindersByVehicleID(int vehicleID) {
+        int removedCount = 0;
+        for (int i = RemindersList.size() - 1; i >= 0; i--) {
+            if (RemindersList.get(i).getVehicleID() == vehicleID) {
+                RemindersList.remove(i);
+                removedCount++;
+            }
+        }
+        return removedCount;
     }
 
     /**

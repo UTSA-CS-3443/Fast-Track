@@ -47,8 +47,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                edu.utsa.cs3443.fasttrack_projectdemo_javafx/edu.utsa.cs3443.fasttrack_projectdemo_javafx.HelloApplication
+                                edu.utsa.cs3443.fasttrack_projectdemo_javafx/edu.utsa.cs3443.fasttrack_projectdemo_javafx.FastTrackApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

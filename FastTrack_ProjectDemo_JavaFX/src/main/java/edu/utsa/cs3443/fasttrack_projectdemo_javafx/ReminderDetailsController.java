@@ -38,7 +38,7 @@ public class ReminderDetailsController {
     private ListView<Part> partsList;
     @FXML
     private void initialize(){
-        Manager a = new Manager();
+        Manager a = Manager.getInstance();
         Reminder b = a.getReminderByID(currReminderID);
         reminderName.setText(b.getReminderName());
         reminderDate.setText(b.getDueDate());
